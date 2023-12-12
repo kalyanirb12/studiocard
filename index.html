@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <script src="https://aframe.io/releases/1.4.2/aframe.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/donmccurdy/aframe-extras@v6.1.1/dist/aframe-extras.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/mind-ar@1.2.2/dist/mindar-image-aframe.prod.js"></script>
+  </head>
+  <body>
+    <a-scene
+    mindar-image="imageTargetSrc:xde.mind;"
+    vr-mode-ui="enabled:false"
+    device-orientation-permission-ui="enabled:true"
+    >
+    <a-camera position="0 0 0" look-controls="enbled:true"></a-camera>
+
+    <a-entity mindar-image-target="targetIndex:0">
+      <a-gltf-model
+        rotation="0 0 0"
+        position="-1 -0.2 0"
+        scale="0.5 0.5 0.5"
+        src="final/final/card.gltf"
+      >
+      </a-gltf-model>
+    </a-entity>
+  </a-scene>
+  </body>
+</html>
